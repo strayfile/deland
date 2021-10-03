@@ -1,0 +1,20 @@
+﻿LandscapeDesignClient
+
+
+winexe
+C#
+.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\
+LandscapeDesignClient
+none
+false
+TRACE
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\App.xaml
+141380476326
+
+40-25780135
+171037836194
+AccountControls\LanguageControl.xaml;AccountControls\ProfileControl.xaml;AuthControls\Authorization.xaml;AuthControls\ConfirmControl.xaml;AuthControls\Registration.xaml;MainWindow.xaml;ProjectMenuControls\MessageWindow.xaml;ProjectMenuControls\PlantViewControl.xaml;ProjectMenuControls\ProjectBuildingCard.xaml;ProjectMenuControls\ProjectControl.xaml;ProjectMenuControls\ProjectPlantCard.xaml;ProjectMenuControls\ProjectPlantCardOtherUser.xaml;Resources\lang.en-US.xaml;Resources\lang.xaml;
+
+False
+

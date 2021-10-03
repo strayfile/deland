@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="e_100" xml:space="preserve">
+    <value>Ошибка сервера.</value>
+  </data>
+  <data name="e_101" xml:space="preserve">
+    <value>Возникла непредвиденная ошибка.</value>
+  </data>
+  <data name="e_102" xml:space="preserve">
+    <value>Невозможно подлючиться к серверу.</value>
+  </data>
+  <data name="e_103" xml:space="preserve">
+    <value>Язык не найден.</value>
+  </data>
+  <data name="e_201" xml:space="preserve">
+    <value>Введите email.</value>
+  </data>
+  <data name="e_200" xml:space="preserve">
+    <value>Ошибка входа.</value>
+  </data>
+  <data name="e_202" xml:space="preserve">
+    <value>Некорректный email.</value>
+  </data>
+  <data name="e_203" xml:space="preserve">
+    <value>Введите пароль.</value>
+  </data>
+  <data name="e_204" xml:space="preserve">
+    <value>Пароль должен быть от 8 до 20 символов включительно, содежать букву верхнего и нижнего регистра, цифру и спецсимвол.</value>
+  </data>
+  <data name="e_205" xml:space="preserve">
+    <value>Некорректное имя.</value>
+  </data>
+  <data name="e_206" xml:space="preserve">
+    <value>Введите подтверждение пароля.</value>
+  </data>
+  <data name="e_207" xml:space="preserve">
+    <value>Пароли не совпадают.</value>
+  </data>
+  <data name="e_208" xml:space="preserve">
+    <value>Неверный email или пароль.</value>
+  </data>
+  <data name="e_209" xml:space="preserve">
+    <value>Пользователь с таким email уже существует.</value>
+  </data>
+  <data name="e_210" xml:space="preserve">
+    <value>Код подтверждения недействителен.</value>
+  </data>
+  <data name="e_211" xml:space="preserve">
+    <value>Пользователь с таким id уже существует.</value>
+  </data>
+  <data name="e_212" xml:space="preserve">
+    <value>Неверный код.</value>
+  </data>
+  <data name="e_213" xml:space="preserve">
+    <value>Пользователя с таким авторизационным токеном не существует.</value>
+  </data>
+  <data name="e_214" xml:space="preserve">
+    <value>Подтверждение регистрации недоступно.</value>
+  </data>
+  <data name="e_301" xml:space="preserve">
+    <value>Невозможно получить проекты.</value>
+  </data>
+  <data name="e_302" xml:space="preserve">
+    <value>Невозможно получить данные проекта</value>
+  </data>
+  <data name="e_303" xml:space="preserve">
+    <value>Не удалось получить данные.</value>
+  </data>
+  <data name="e_304" xml:space="preserve">
+    <value>Не удалось добавить проект.</value>
+  </data>
+  <data name="e_305" xml:space="preserve">
+    <value>Не удалось отредактировать проект.</value>
+  </data>
+  <data name="e_306" xml:space="preserve">
+    <value>Не удалось удалить проект.</value>
+  </data>
+  <data name="e_307" xml:space="preserve">
+    <value>Не удалось добавить растение.</value>
+  </data>
+  <data name="e_308" xml:space="preserve">
+    <value>Не удалось отредактировать растение.</value>
+  </data>
+  <data name="e_309" xml:space="preserve">
+    <value>Не удалось удалить растение.</value>
+  </data>
+  <data name="e_310" xml:space="preserve">
+    <value>Не удалось добавить строение.</value>
+  </data>
+  <data name="e_311" xml:space="preserve">
+    <value>Не удалось отредактировать строение.</value>
+  </data>
+  <data name="e_312" xml:space="preserve">
+    <value>Не удалось удалить строение.</value>
+  </data>
+  <data name="e_104" xml:space="preserve">
+    <value>Внимание!</value>
+  </data>
+  <data name="e_105" xml:space="preserve">
+    <value>Уведомление</value>
+  </data>
+  <data name="e_313" xml:space="preserve">
+    <value>Вы собираетесь поделиться со всеми. После подтверждения вы не сможете отредактировать или удалить</value>
+  </data>
+  <data name="e_106" xml:space="preserve">
+    <value>Продолжить?</value>
+  </data>
+  <data name="e_314" xml:space="preserve">
+    <value>Не удалось загрузить текстуру.</value>
+  </data>
+  <data name="e_315" xml:space="preserve">
+    <value>Новое растение</value>
+  </data>
+  <data name="e_316" xml:space="preserve">
+    <value>Редактирование растения</value>
+  </data>
+  <data name="e_317" xml:space="preserve">
+    <value>Новое строение</value>
+  </data>
+  <data name="e_318" xml:space="preserve">
+    <value>Редактирование строения</value>
+  </data>
+  <data name="e_215" xml:space="preserve">
+    <value>Ваша почта не подтверждена.</value>
+  </data>
+  <data name="e_319" xml:space="preserve">
+    <value>Категория не найдена.</value>
+  </data>
+  <data name="e_216" xml:space="preserve">
+    <value>Код подтверждения выслан повторно.</value>
+  </data>
+  <data name="e_217" xml:space="preserve">
+    <value>Ваша почту уже подтверждена</value>
+  </data>
+  <data name="e_320" xml:space="preserve">
+    <value>Новый проект</value>
+  </data>
+  <data name="e_321" xml:space="preserve">
+    <value>Указатель</value>
+  </data>
+  <data name="e_322" xml:space="preserve">
+    <value>Перемещение</value>
+  </data>
+  <data name="e_323" xml:space="preserve">
+    <value>Добавить точку</value>
+  </data>
+  <data name="e_324" xml:space="preserve">
+    <value>Увеличить</value>
+  </data>
+</root>

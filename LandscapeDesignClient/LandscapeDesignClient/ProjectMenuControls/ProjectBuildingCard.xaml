@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="LandscapeDesignClient.ProjectMenuControls.ProjectBuildingCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:LandscapeDesignClient.ProjectMenuControls"
+             mc:Ignorable="d"  DataContextChanged="UserControl_DataContextChanged"
+             Height="Auto" d:DesignWidth="432">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <materialDesign:Card Background="White" Name="cBuilding" >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <WrapPanel HorizontalAlignment="Right">
+                <Button Name="btnEdit" Click="BtnEdit_Click" Margin="4" Width="32" Height="32" Style="{StaticResource MaterialDesignFloatingActionMiniDarkButton}" ToolTip="{DynamicResource m_e_Edit}">
+                    <materialDesign:PackIcon Kind="Edit" Width="18" Height="18" Margin="2" />
+                </Button>
+                <Button Name="btnDel" Click="BtnDel_Click" Margin="4" Width="32" Height="32" Background="#ee1111" Style="{StaticResource MaterialDesignFloatingActionMiniDarkButton}" ToolTip="{DynamicResource m_e_Delete}" BorderBrush="{x:Null}" >
+                    <materialDesign:PackIcon Kind="Delete" Width="18" Height="18" Margin="2"/>
+                </Button>
+                <ToggleButton Grid.Row="2" Grid.RowSpan="2" Margin="4" Width="32" Height="32" Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}" ToolTip="MaterialDesignFlatPrimaryToggleButton" IsEnabled="{Binding IsShareEnabled}" IsChecked="{Binding Shared}">
+                    <materialDesign:PackIcon Kind="ShareVariant" Height="20" Width="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </ToggleButton>
+            </WrapPanel>
+            <Grid Grid.Column="1" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border Margin="4,8,0,8" CornerRadius="1" Background="#FFEAC58E" />
+                <TextBlock FontWeight="Bold" FontSize="14" Name="tbName" Text="{Binding Path=PlantName}" Height="20" Foreground="DarkGreen" Margin="16,10,2,10"/>
+            </Grid>
+        </Grid>
+    </materialDesign:Card>
+</UserControl>

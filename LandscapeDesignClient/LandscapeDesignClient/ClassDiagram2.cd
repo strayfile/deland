@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LandscapeDesignClient.AccountControls.LanguageControl" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAIAAAQAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>AccountControls\LanguageControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.AccountControls.ProfileControl" BaseTypeListCollapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AhMQAhgwkACQ4aggMAEkJyBhgAKAApiX5QCBRIBoYQA=</HashCode>
+      <FileName>AccountControls\ProfileControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.App" Collapsed="true">
+    <Position X="6" Y="28.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAgAAAAAAAABQAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.MainWindowControlsManager">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIgkAaCQMYARAgIAD0ABIgEwFAJgBIAUAFARIYoBirQ=</HashCode>
+      <FileName>MainWindowControlsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.AuthControls.Authorization" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQBAAAACCAAAAAIAAAIGABgAAAAAACQAAAAIAIEAU=</HashCode>
+      <FileName>AuthControls\Authorization.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.AuthControls.AuthPerson">
+    <Position X="13.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAMAAAAAAAAgAAIAAAAIAQAAA=</HashCode>
+      <FileName>AuthControls\AuthPerson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.AuthControls.ConfirmControl" BaseTypeListCollapsed="true">
+    <Position X="6" Y="23.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAACAAAABIAAgAGABgAAAAQgIQAAAAIAgAAA=</HashCode>
+      <FileName>AuthControls\ConfirmControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.AuthControls.Registration" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="30.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAJAAAACCAAAAAIEAAIGABgAEAAgACYQQAAIAIMAE=</HashCode>
+      <FileName>AuthControls\Registration.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.LDUser">
+    <Position X="7.75" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAACACAAggAAAAAAAAQAgAAAAAAGAAAgAAIACAA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.InvalidCustomFault">
+    <Position X="10.75" Y="38.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAgAAAAAAEAAAAAAIACAA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.InvalidProjectsFault" Collapsed="true">
+    <Position X="9.25" Y="38.25" Width="1.5" />
+    <InheritanceLine Type="LandscapeDesignClient.LandscapeDesignReference.InvalidCustomFault" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.5" Y="41.593" />
+        <Point X="10.758" Y="41.593" />
+        <Point X="10.758" Y="39.011" />
+        <Point X="9.25" Y="39.011" />
+        <Point X="9.25" Y="38.813" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.InvalidProjectItemFault" Collapsed="true">
+    <Position X="10.75" Y="37.5" Width="1.5" />
+    <InheritanceLine Type="LandscapeDesignClient.LandscapeDesignReference.InvalidCustomFault" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="10.75" Y="41.562" />
+        <Point X="10.75" Y="37.846" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.InvalidUserFault" Collapsed="true">
+    <Position X="9.25" Y="37.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.LDProject">
+    <Position X="7.5" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAQCCAAAyEIAAAAAAAQAgAABAAAEAAEhAAIAAAA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.103" />
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.LDEntity" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="30.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCCACAAABgEAAAAQAEAwAkBAQAAAEAQIiACIA6CA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.DbGeometry" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAgAAAAAAEAAAAAAIAiAA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.DbGeometryWellKnownValue" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="35.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgACBAAAAEAAAAAAAEAAiAAAAAAEAAAAAAIAIAA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.LDEntityTexture">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAQCCAABAEAAAAAAAAAAgAAAAAAEAAIgAAIAiAA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.LDPlant">
+    <Position X="10.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CICaAQQGCCCohEAAA0AEBAQxkAAAAIAEAAAiAAIAqgA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.LDPlantCharacteristics" BaseTypeListCollapsed="true">
+    <Position X="9" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAYAGAAAAAAQAAAAEEAAAgCAQAIAEAAAEAAIAigA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.LDBuilding">
+    <Position X="13.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAQCCACAgEAAAAAIBAQAgAAAAAAEAAIgAAIAiCA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.LDBuildingCharacteristics" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="30.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAACIAAAAAAAAAAAAAAAgAAAAAAEAAAAAAIAiAA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.LandscapeDesignReference.LandscapeDesignServiceClient" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBgAAAgQUBBAgI0BEAIIlEgQCAhwEUgwAIYLiAJgWo=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.BuildingFactory">
+    <Position X="10.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAAEAAAAAAQAAgAAAgAAIABABAAAAGQAAAAAAQBAAAA=</HashCode>
+      <FileName>Model\BuildingFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.BuildingsCategory">
+    <Position X="12.25" Y="30.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICABAAAACAAgAAAAAAAAQAAAAEAAAAAAAAAABAAIA=</HashCode>
+      <FileName>Model\BuildingFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.Building">
+    <Position X="12" Y="28" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Buildings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.Flooring">
+    <Position X="9" Y="28" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="LandscapeDesignClient.Model.Building" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.547" Y="29.103" />
+        <Point X="12.547" Y="29.19" />
+        <Point X="9.008" Y="29.19" />
+        <Point X="9.008" Y="27.808" />
+        <Point X="9.75" Y="27.808" />
+        <Point X="9.75" Y="28" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Buildings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.House">
+    <Position X="13.5" Y="27.5" Width="1.5" />
+    <InheritanceLine Type="LandscapeDesignClient.Model.Building" ManuallyRouted="true">
+      <Path>
+        <Point X="13.156" Y="29.103" />
+        <Point X="13.156" Y="29.209" />
+        <Point X="13.844" Y="29.209" />
+        <Point X="13.844" Y="28.733" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Buildings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.Fence">
+    <Position X="12" Y="26.75" Width="1.5" />
+    <InheritanceLine Type="LandscapeDesignClient.Model.Building" ManuallyRouted="true">
+      <Path>
+        <Point X="12.75" Y="28" />
+        <Point X="12.75" Y="27.983" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Buildings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.Decoration">
+    <Position X="25.5" Y="37.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Buildings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.Entity">
+    <Position X="7.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAACAQAAAAACAAAAEAQAEBAAAAAEAAIAAAEAYCA=</HashCode>
+      <FileName>Model\DrawableEntities.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.LandscapeDesignFactory" BaseTypeListCollapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yQCMBAAERaAAAgACiAiAagMEBgADwMsCwMYwCxqBgQU=</HashCode>
+      <FileName>Model\LandscapeDesignFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.LandscapeDesignModelAdapter">
+    <Position X="12.25" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAQEAAAAAAAABAAAAEAAAAAAAEgAAAAAAAAA=</HashCode>
+      <FileName>Model\LandscapeDesignModelAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.PlantCharacteristics">
+    <Position X="12" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAAEEAAEAAQAFAEQAhAEklDCBCAQmAAgABAAEgQACiE=</HashCode>
+      <FileName>Model\PlantCharacteristics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.Plant">
+    <Position X="13.75" Y="39.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABBAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Plants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.Grass">
+    <Position X="12.25" Y="36.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Plants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.Bush">
+    <Position X="12.25" Y="39.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Plants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.Tree">
+    <Position X="7.75" Y="40.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Plants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.PlantFactory">
+    <Position X="13.75" Y="30.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAEAEAAAAQAQAAAAAAAIAAABAAAACAAAAAAYQJAgAA=</HashCode>
+      <FileName>Model\PlantsFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.PlantsCategory">
+    <Position X="6" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAISAAAAAAAAAgAAAIAAAAQAAAAAAAAAAAAAAABAAIA=</HashCode>
+      <FileName>Model\PlantsFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.Project">
+    <Position X="9" Y="25.5" Width="1.5" />
+    <InheritanceLine Type="LandscapeDesignClient.LandscapeDesignReference.LDProject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="23.125" />
+        <Point X="9.006" Y="23.125" />
+        <Point X="9.006" Y="24.365" />
+        <Point X="8.994" Y="24.365" />
+        <Point X="8.994" Y="26.142" />
+        <Point X="9.006" Y="26.142" />
+        <Point X="9.006" Y="26.175" />
+        <Point X="8.994" Y="26.175" />
+        <Point X="8.994" Y="26.593" />
+        <Point X="9.006" Y="26.593" />
+        <Point X="9.006" Y="26.627" />
+        <Point X="8.994" Y="26.627" />
+        <Point X="8.994" Y="27.785" />
+        <Point X="9.625" Y="27.785" />
+        <Point X="9.625" Y="27.761" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAIEAAAEAAAA=</HashCode>
+      <FileName>Model\Project.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.ProjectPlant">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Model\ProjectEntities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.ProjectBuilding">
+    <Position X="12" Y="25.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Model\ProjectEntities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.ProjectFactory">
+    <Position X="6.25" Y="30.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAEAAAAAAAAAgAAAAAAAAAABAAAAAAAAgAAAABBAYA=</HashCode>
+      <FileName>Model\ProjectFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.Texture">
+    <Position X="6" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Textures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.EntityTextures">
+    <Position X="6.25" Y="39" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACACACAQAAAABAAAAAAAAAAAAAAAAAEAQAAAAAAAA=</HashCode>
+      <FileName>Model\Textures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.PlantTextures">
+    <Position X="7.75" Y="38" Width="1.5" />
+    <InheritanceLine Type="LandscapeDesignClient.Model.EntityTextures" ManuallyRouted="true">
+      <Path>
+        <Point X="7.75" Y="40.484" />
+        <Point X="7.75" Y="40.069" />
+        <Point X="8.5" Y="40.069" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>CAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Textures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.BuildingTextures">
+    <Position X="9.25" Y="39.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Textures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.User">
+    <Position X="6.25" Y="33.75" Width="1.5" />
+    <InheritanceLine Type="LandscapeDesignClient.LandscapeDesignReference.LDUser" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="33.75" />
+        <Point X="7.75" Y="33.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.ProjectMenuControls.MessageWindow" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="37.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAQAAAAAQAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ProjectMenuControls\MessageWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.ProjectMenuControls.PlantCard" BaseTypeListCollapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAiwMABEYAAqBABUIApEEBEygDUAGAAAAAKKEIIAKiA=</HashCode>
+      <FileName>ProjectMenuControls\PlantCard.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.ProjectMenuControls.PlantViewControl" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="23.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAgQACAAAAAQAAAAACAAABABAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>ProjectMenuControls\PlantViewControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.ProjectMenuControls.ProjectBuildingCard" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="35.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAEAQAAAAAAABAAAAgABAAAAAgAAAAAAAAAgACA=</HashCode>
+      <FileName>ProjectMenuControls\ProjectBuildingCard.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.ProjectMenuControls.ProjectControl" BaseTypeListCollapsed="true">
+    <Position X="6" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAIAAAAAAAAAAKAAAAAgIAAgAAAAABAAAAAAAAAEAAA=</HashCode>
+      <FileName>ProjectMenuControls\ProjectControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.ProjectMenuControls.ProjectPlantCard" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAQAAEAQAAAAAAAJAEAAggBgAAAAgAAAIAAAAAAACA=</HashCode>
+      <FileName>ProjectMenuControls\ProjectPlantCard.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.ProjectMenuControls.ProjectPlantCardOtherUser" BaseTypeListCollapsed="true">
+    <Position X="9" Y="20.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQAAAAAAAAAEAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProjectMenuControls\ProjectPlantCardOtherUser.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.1" Collapsed="true" />
+  </Class>
+  <Class Name="LandscapeDesignClient.Properties.Resources" Collapsed="true">
+    <Position X="13.75" Y="34.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Properties.Settings" Collapsed="true">
+    <Position X="19" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Resources.ErrorsAndMessages" Collapsed="true">
+    <Position X="7.5" Y="27.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAEAAADgAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Resources.Texts">
+    <Position X="7.5" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Resources\ErrorText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.Model.CopyOfProject">
+    <Position X="9" Y="23.25" Width="1.5" />
+    <InheritanceLine Type="LandscapeDesignClient.LandscapeDesignReference.LDProject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="23.375" />
+        <Point X="9" Y="23.251" />
+        <Point X="9.812" Y="23.124" />
+        <Point X="9.812" Y="23.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAIEAAAEAAAA=</HashCode>
+      <FileName>Model\Project.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeDesignClient.AccountControls.CopyOfLanguageControl" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAIAAAQAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>AccountControls\LanguageControl.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="LandscapeDesignClient.LandscapeDesignReference.ILandscapeDesignService" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBgAAAgQUBBAgI0BEAIIlEgQCAhwEUgwAIYLiAJgWo=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LandscapeDesignClient.LandscapeDesignReference.ILandscapeDesignServiceChannel" Collapsed="true">
+    <Position X="7.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\LandscapeDesignReference\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LandscapeDesignClient.Model.IDrawable" Collapsed="true">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAACAAAAAAACAAAAAAAAEBAAAAAEAAIAAAEAYCA=</HashCode>
+      <FileName>Model\DrawableEntities.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LandscapeDesignClient.Model.ILandscapeDesignFactory" Collapsed="true">
+    <Position X="17.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wACIAAAARYAAAgAAgAiAIgEEAAADwEMAwMYwCgiBgAQ=</HashCode>
+      <FileName>Model\ILandscapeDesignFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Delegate Name="LandscapeDesignClient.AccountControls.ProjectItemHandler" Collapsed="true">
+    <Position X="28.5" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccountControls\ProfileControl.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="LandscapeDesignClient.AccountControls.PlantHandler" Collapsed="true">
+    <Position X="22.75" Y="36.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccountControls\ProfileControl.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="LandscapeDesignClient.AccountControls.BuildingHandler" Collapsed="true">
+    <Position X="22.5" Y="35.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccountControls\ProfileControl.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="LandscapeDesignClient.ButtonClicked" Collapsed="true">
+    <Position X="28.5" Y="31.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindowControlsManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="LandscapeDesignClient.UserHandler" Collapsed="true">
+    <Position X="28.5" Y="36" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindowControlsManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="LandscapeDesignClient.LoginBtnClick" Collapsed="true">
+    <Position X="28.5" Y="34.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindowControlsManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="LandscapeDesignClient.RegBtnClick" Collapsed="true">
+    <Position X="28.5" Y="35.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAACAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindowControlsManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="LandscapeDesignClient.ControlChanged" Collapsed="true">
+    <Position X="28.5" Y="33" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindowControlsManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="LandscapeDesignClient.ProfileLoadHandler" Collapsed="true">
+    <Position X="28.5" Y="32.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindowControlsManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="LandscapeDesignClient.Model.GetImageHandler" Collapsed="true">
+    <Position X="24" Y="35.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DrawableEntities.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="LandscapeDesignClient.Model.MessageHandler" Collapsed="true">
+    <Position X="22.5" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ILandscapeDesignFactory.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

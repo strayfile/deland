@@ -1,0 +1,254 @@
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csprojResolveAssemblyReference.cache
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.g.cs
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\App.g.cs
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.cache
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.lref
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe.config
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.pdb
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.dll
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.dll
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.xml
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.xml
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.baml
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.g.resources
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.Properties.Resources.resources
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.GenerateResource.Cache
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CoreCompileInputs.cache
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.exe
+E:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.pdb
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesign.mdf
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesign_log.ldf
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe.config
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.pdb
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.dll
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.dll
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.xml
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.xml
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csprojAssemblyReference.cache
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.g.cs
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\App.g.cs
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_Content.g.cs
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.cache
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.lref
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.baml
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.g.resources
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.Properties.Resources.resources
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.GenerateResource.cache
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CoreCompileInputs.cache
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CopyComplete
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.exe
+H:\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.pdb
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.g.cs
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\App.g.cs
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_Content.g.cs
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.cache
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.lref
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.exe
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.pdb
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesign.mdf
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesign_log.ldf
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe.config
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.pdb
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.dll
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.xml
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.baml
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.g.resources
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.Properties.Resources.resources
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.GenerateResource.cache
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CoreCompileInputs.cache
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CopyComplete
+D:\Study\.NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csprojAssemblyReference.cache
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csprojAssemblyReference.cache
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.g.cs
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\App.g.cs
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_Content.g.cs
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.cache
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.lref
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.exe
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.pdb
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe.config
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.pdb
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.dll
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.xml
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.baml
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.g.resources
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.Properties.Resources.resources
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.GenerateResource.cache
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CoreCompileInputs.cache
+D:\Study\ШАГ\NET Framework\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CopyComplete
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe.config
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.pdb
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.dll
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.xml
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csprojResolveAssemblyReference.cache
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.g.cs
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\App.g.cs
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_Content.g.cs
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.cache
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.lref
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.baml
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.g.resources
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.Properties.Resources.resources
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.GenerateResource.Cache
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CoreCompileInputs.cache
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.exe
+C:\Users\Ivan_ka42\Downloads\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.pdb
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesign.mdf
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesign_log.ldf
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe.config
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.pdb
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.dll
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.xml
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csprojAssemblyReference.cache
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.g.cs
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\App.g.cs
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_Content.g.cs
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.cache
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.lref
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.baml
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.g.resources
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.Properties.Resources.resources
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.GenerateResource.cache
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CoreCompileInputs.cache
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CopyComplete
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.exe
+D:\Study\ШАГ\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.pdb
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe.config
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.pdb
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.dll
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.xml
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csprojAssemblyReference.cache
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.g.cs
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\App.g.cs
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_Content.g.cs
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.cache
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.lref
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.baml
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.g.resources
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.Properties.Resources.resources
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.GenerateResource.cache
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CoreCompileInputs.cache
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CopyComplete
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.exe
+D:\Study\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.pdb
+E:\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+E:\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+E:\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe.config
+E:\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe
+E:\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.pdb
+E:\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.dll
+E:\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.dll
+E:\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.xml
+E:\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.xml
+E:\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csprojResolveAssemblyReference.cache
+E:\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.g.cs
+E:\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\App.g.cs
+E:\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_Content.g.cs
+E:\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.cache
+E:\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.lref
+E:\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.baml
+E:\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.g.resources
+E:\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.Properties.Resources.resources
+E:\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.GenerateResource.Cache
+E:\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CoreCompileInputs.cache
+E:\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.exe
+E:\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.pdb
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe.config
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.pdb
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.dll
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.xml
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csprojAssemblyReference.cache
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.g.cs
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\App.g.cs
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.cache
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.lref
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.baml
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.g.resources
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.Properties.Resources.resources
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.GenerateResource.cache
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CoreCompileInputs.cache
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CopyComplete
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.exe
+D:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.pdb
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe.config
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.pdb
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.dll
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.dll
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.xml
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.xml
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csprojAssemblyReference.cache
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.g.cs
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\App.g.cs
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.cache
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.lref
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.baml
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.g.resources
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.Properties.Resources.resources
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.GenerateResource.cache
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CoreCompileInputs.cache
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CopyComplete
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.exe
+H:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.pdb
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe.config
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.exe
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\LandscapeDesignServer.pdb
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.dll
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.dll
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.xml
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\bin\Debug\EntityFramework.SqlServer.xml
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csprojAssemblyReference.cache
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.g.cs
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\App.g.cs
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.cache
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer_MarkupCompile.lref
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\MainWindow.baml
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.g.resources
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.Properties.Resources.resources
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.GenerateResource.cache
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CoreCompileInputs.cache
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.csproj.CopyComplete
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.exe
+E:\Git\Deland\LandscapeDesignServer\LandscapeDesignServer\obj\Debug\LandscapeDesignServer.pdb

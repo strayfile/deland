@@ -1,0 +1,84 @@
+﻿<UserControl x:Class="LandscapeDesignClient.ProjectMenuControls.ProjectPlantCardOtherUser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LandscapeDesignClient.ProjectMenuControls"
+             mc:Ignorable="d" DataContextChanged="UserControl_DataContextChanged"
+             Width="556" Height="Auto">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <materialDesign:Card Background="White" Name="cPlant" >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="1" Grid.Column="0" Width="64" Height="64" Margin="6" CornerRadius="1" Background="#ffb74d" VerticalAlignment="Top"/>
+            <Image Grid.Row="1" Grid.Column="0" Width="56" Height="56" Margin="10" Source="{Binding Path=Texture}" Stretch="UniformToFill" VerticalAlignment="Top"/>
+            <Grid Grid.ColumnSpan="2" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border Margin="6,8,0,8" CornerRadius="1" Background="#FFA5D6A7" />
+                <TextBlock FontWeight="Bold" FontSize="14" Name="tbName" Text="{Binding Path=PlantName}" Height="20" Foreground="DarkGreen" Margin="16,10,2,10"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="{DynamicResource pl_Temperature}" FontWeight="Bold" TextWrapping="Wrap" Margin="8,2"/>
+                <WrapPanel Name="tbD5" Grid.Row="0" Grid.Column="1" Margin="8,2" Background="White">
+                    <TextBlock Name="tbTempMin" Text="{Binding Path=TemperatureMin}" Margin="4,0"/>
+                    <TextBlock Text="  -  "/>
+                    <TextBlock Name="tbTempMax" Text="{Binding Path=TemperatureMax}"/>
+                </WrapPanel>
+                <TextBlock Grid.Row="0" Grid.Column="2" FontWeight="Bold" Margin="8,2" Text="{DynamicResource pl_Watering}" />
+                <TextBlock Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" Background="White" Margin="8,2" Padding="4,0" Text="{Binding Path=Watering}"  TextWrapping="Wrap"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" FontWeight="Bold" Margin="8,2" Text="{DynamicResource pl_Lightning}" />
+                <TextBlock Name="tbD6" Grid.Row="1" Grid.Column="1" Background="White" Margin="8,2" Padding="4,0" Text="{Binding Path=Lightning}" TextWrapping="Wrap"/>
+                <TextBlock Grid.Row="1" Grid.Column="2" FontWeight="Bold" Margin="8,2" Text="{DynamicResource pl_Care}" />
+                <TextBlock Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Background="White" Margin="8,2" Padding="4,0" Text="{Binding Path=Care}"  TextWrapping="Wrap"/>
+                <TextBlock Name="tbD1" Grid.Row="2" Grid.Column="0" FontWeight="Bold" Text="{DynamicResource pl_TrunkDiameter}" Margin="8,2" />
+                <WrapPanel Name="tbD2" Grid.Row="2" Grid.Column="1" Background="White" Margin="8,2">
+                    <TextBlock  Margin="4,0" Text="{Binding Path=TrunkDiameter}"/>
+                    <TextBlock Text="{DynamicResource m_p_Sm}"/>
+                </WrapPanel>
+                <TextBlock Name="tbD3" Grid.Row="2" Grid.Column="2" FontWeight="Bold" Text="{DynamicResource pl_CrownDiameter}" Margin="8,2" />
+                <WrapPanel Name="tbD4" Grid.Row="2" Grid.Column="3" Background="White" Margin="8,2">
+                    <TextBlock Margin="4,0" Text="{Binding Path=CrownDiameter}" TextWrapping="Wrap"/>
+                    <TextBlock Text="{DynamicResource m_p_Sm}"/>
+                </WrapPanel>
+                <TextBlock Grid.Row="3" Grid.Column="0" FontWeight="Bold" Text="{DynamicResource pl_Soil}" Margin="8,2" />
+                <TextBlock Grid.Row="3" Grid.Column="1" Background="White" Margin="8,2" Padding="4,0" Text="{Binding Path=Soil}"/>
+                <TextBlock Grid.Row="3" Grid.Column="2" FontWeight="Bold" Text="{DynamicResource pl_SoilPh}" Margin="8,2" />
+                <WrapPanel Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" Background="White" Margin="8,2">
+                    <TextBlock Name="tbSoilType" Text="{Binding Path=SoilType}" Margin="4,0,8,0"/>
+                    <TextBlock Name="tbSoilPH" Text="{Binding Path=PH}"/>
+                    <TextBlock Text="pH" Margin="4,0"/>
+                </WrapPanel>
+                <TextBlock Grid.Row="4" Text="{DynamicResource pl_Description}" Name="tbDesc" Visibility="{Binding Path=DescriptionVisibility}" FontWeight="Bold" Margin="8,2"/>
+                <TextBlock Grid.Row="4" Grid.Column="1" Background="White" Padding="2" Foreground="Gray" Grid.ColumnSpan="3" Text="{Binding Path=Description}" Margin="8,2,8,8" TextWrapping="Wrap" VerticalAlignment="Center"/>
+            </Grid>
+        </Grid>
+    </materialDesign:Card>
+</UserControl>
+

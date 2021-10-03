@@ -1,0 +1,172 @@
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\LandscapeDesignClient.exe.config
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\LandscapeDesignClient.exe
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\en-US\LandscapeDesignClient.resources.dll
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignColors.dll
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignThemes.Wpf.dll
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignColors.pdb
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignThemes.Wpf.pdb
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignThemes.Wpf.xml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AccountControls\LanguageControl.g.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AccountControls\ProfileControl.g.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\Authorization.g.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\ConfirmControl.g.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\Registration.g.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\MainWindow.g.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\MessageWindow.g.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\PlantViewControl.g.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectBuildingCard.g.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectControl.g.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectPlantCard.g.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectPlantCardOtherUser.g.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\App.g.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient_MarkupCompile.cache
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient_MarkupCompile.lref
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\App.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AccountControls\LanguageControl.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AccountControls\ProfileControl.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\Authorization.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\ConfirmControl.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\Registration.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\MainWindow.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\MessageWindow.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\PlantViewControl.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectBuildingCard.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectControl.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectPlantCard.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectPlantCardOtherUser.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\Resources\lang.en-US.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\Resources\lang.baml
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.g.resources
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.Properties.Resources.resources
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.Resources.ErrorsAndMessages.resources
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.Resources.ErrorsAndMessages.en-US.resources
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.csproj.GenerateResource.Cache
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.csproj.CoreCompileInputs.cache
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\en-US\LandscapeDesignClient.resources.dll
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.exe
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\LandscapeDesignClient.pdb
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.pdb
+E:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.csprojResolveAssemblyReference.cache
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\LandscapeDesignClient.exe.config
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\LandscapeDesignClient.exe
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\LandscapeDesignClient.pdb
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\en-US\LandscapeDesignClient.resources.dll
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignColors.dll
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignThemes.Wpf.dll
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignColors.pdb
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignThemes.Wpf.pdb
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignThemes.Wpf.xml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.csprojAssemblyReference.cache
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AccountControls\LanguageControl.g.cs
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AccountControls\ProfileControl.g.cs
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\Authorization.g.cs
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\ConfirmControl.g.cs
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\Registration.g.cs
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\MainWindow.g.cs
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\MessageWindow.g.cs
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\PlantViewControl.g.cs
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectBuildingCard.g.cs
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectControl.g.cs
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectPlantCard.g.cs
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectPlantCardOtherUser.g.cs
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\App.g.cs
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\GeneratedInternalTypeHelper.g.cs
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient_MarkupCompile.cache
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient_MarkupCompile.lref
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\App.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AccountControls\LanguageControl.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AccountControls\ProfileControl.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\Authorization.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\ConfirmControl.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\Registration.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\MainWindow.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\MessageWindow.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\PlantViewControl.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectBuildingCard.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectControl.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectPlantCard.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectPlantCardOtherUser.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\Resources\lang.en-US.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\Resources\lang.baml
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.g.resources
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.Properties.Resources.resources
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.Resources.ErrorsAndMessages.resources
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.Resources.ErrorsAndMessages.en-US.resources
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.csproj.GenerateResource.cache
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.csproj.CoreCompileInputs.cache
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\en-US\LandscapeDesignClient.resources.dll
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.csproj.CopyComplete
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.exe
+G:\.NET Framework\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.pdb
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.csprojAssemblyReference.cache
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AccountControls\LanguageControl.g.cs
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AccountControls\ProfileControl.g.cs
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\Authorization.g.cs
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\ConfirmControl.g.cs
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\Registration.g.cs
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\MainWindow.g.cs
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\MessageWindow.g.cs
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\PlantViewControl.g.cs
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectBuildingCard.g.cs
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectControl.g.cs
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectPlantCard.g.cs
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectPlantCardOtherUser.g.cs
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\App.g.cs
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient_MarkupCompile.cache
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient_MarkupCompile.lref
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.exe
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.pdb
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\bin\Release\LandscapeDesignClient.exe.config
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\bin\Release\LandscapeDesignClient.exe
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\bin\Release\LandscapeDesignClient.pdb
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\bin\Release\en-US\LandscapeDesignClient.resources.dll
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignColors.dll
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignThemes.Wpf.dll
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignColors.pdb
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignThemes.Wpf.pdb
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\bin\Release\MaterialDesignThemes.Wpf.xml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\App.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AccountControls\LanguageControl.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AccountControls\ProfileControl.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\Authorization.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\ConfirmControl.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\Registration.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\MainWindow.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\MessageWindow.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\PlantViewControl.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectBuildingCard.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectControl.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectPlantCard.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectPlantCardOtherUser.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\Resources\lang.en-US.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\Resources\lang.baml
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.g.resources
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.Properties.Resources.resources
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.Resources.ErrorsAndMessages.resources
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.Resources.ErrorsAndMessages.en-US.resources
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.csproj.GenerateResource.cache
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.csproj.CoreCompileInputs.cache
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\en-US\LandscapeDesignClient.resources.dll
+D:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.csproj.CopyComplete
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.csprojAssemblyReference.cache
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AccountControls\LanguageControl.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AccountControls\ProfileControl.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\Authorization.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\ConfirmControl.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\AuthControls\Registration.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\MainWindow.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\MessageWindow.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\PlantViewControl.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectBuildingCard.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectControl.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectCreatorControl.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectPlantCard.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\ProjectMenuControls\ProjectPlantCardOtherUser.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\App.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\GeneratedInternalTypeHelper.g.cs
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient_MarkupCompile.cache
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient_MarkupCompile.lref
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.exe
+H:\Git\Deland\LandscapeDesignClient\LandscapeDesignClient\obj\Release\LandscapeDesignClient.pdb

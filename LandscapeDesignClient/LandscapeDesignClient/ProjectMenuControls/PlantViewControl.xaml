@@ -1,0 +1,107 @@
+﻿<UserControl x:Class="LandscapeDesignClient.ProjectMenuControls.PlantViewControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LandscapeDesignClient.ProjectMenuControls"
+             mc:Ignorable="d" Height="Auto" VerticalAlignment="Center" HorizontalAlignment="Center">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries />
+            <RoutedUICommand x:Key="cmndSave" Text="cmdSave"/>
+            <RoutedUICommand x:Key="cmndCancel" Text="cmdCancel"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <UserControl.CommandBindings>
+        <CommandBinding Command="{StaticResource cmndSave}" Executed="SaveExecuted"/>
+        <CommandBinding Command="{StaticResource cmndCancel}" Executed="CancelExecuted"/>
+    </UserControl.CommandBindings>
+    <UserControl.InputBindings>
+        <KeyBinding Key="S" Modifiers="Ctrl" Command="{StaticResource cmndSave}"/>
+        <KeyBinding Key="Esc" Command="{StaticResource cmndCancel}"/>
+    </UserControl.InputBindings>
+    <materialDesign:Card Background="White">
+        <StackPanel Name="spPlant">
+            <Border Background="#FF43A647">
+                <TextBlock Text="{Binding TitleText}" Foreground="White" HorizontalAlignment="Center" Margin="14" FontSize="15"/>
+            </Border>
+            <Grid Name="spPlantData" Width="440" Height="Auto" Margin="18,10" ScrollViewer.CanContentScroll="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4"/>
+                    <ColumnDefinition Width="170"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Text="{Binding Path=PlantName}" Margin="4" materialDesign:HintAssist.Hint="{DynamicResource m_e_Name}" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <ComboBox Grid.Column="2" Name="cmbCategory" materialDesign:HintAssist.Hint="{DynamicResource m_e_Category}" SelectionChanged="CmbCategory_SelectionChanged" Style="{StaticResource MaterialDesignFloatingHintComboBox}" ItemsSource="{Binding Categories}" SelectedIndex="{Binding CategoryIndex}" Margin="4"/>
+                <ComboBox Grid.Row="1" Name="cmbSoil" materialDesign:HintAssist.Hint="{DynamicResource pl_Soil}" SelectedIndex="{Binding SoilIndex}" ItemsSource="{Binding SoilNames}" Margin="4" Style="{StaticResource MaterialDesignFloatingHintComboBox}"/>
+                <ComboBox Grid.Column="2" Grid.Row="1" Name="cmbSoilType" Margin="4" materialDesign:HintAssist.Hint="{DynamicResource pl_SoilPh}" ItemsSource="{Binding SoilTypes}" SelectedIndex="{Binding SoilTypeIndex}" Style="{StaticResource MaterialDesignFloatingHintComboBox}"/>
+                <ComboBox Grid.Row="2" Name="cmbCare"  Margin="4"  materialDesign:HintAssist.Hint="{DynamicResource pl_Care}" ItemsSource="{Binding CareTypes}" SelectedIndex="{Binding CareTypeIndex}" Style="{StaticResource MaterialDesignFloatingHintComboBox}"/>
+                <ComboBox Grid.Column="2" Grid.Row="2" Name="cmbLightning" Margin="4" materialDesign:HintAssist.Hint="{DynamicResource pl_Lightning}" ItemsSource="{Binding Lightnings}" SelectedIndex="{Binding LightningIndex}" Style="{StaticResource MaterialDesignFloatingHintComboBox}"/>
+                <Grid Grid.Row="3" Name="spNoResizable" Visibility="Visible">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <WrapPanel>
+                        <TextBox x:Name="txtTrunk" Text="{Binding Path=TrunkDiameter}" Width="100" Margin="4" KeyUp="NumPreviewKeyDown" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="{DynamicResource pl_TrunkDiameter}"/>
+                        <TextBlock Text="{DynamicResource m_p_Sm}" Margin="4,12" VerticalAlignment="Bottom"/>
+                    </WrapPanel>
+                    <WrapPanel Grid.Column="1">
+                        <TextBox x:Name="txtCrown" Text="{Binding Path=CrownDiameter}" Width="100" Margin="4" KeyUp="NumPreviewKeyDown" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="{DynamicResource pl_CrownDiameter}"/>
+                        <TextBlock Text="{DynamicResource m_p_Sm}" Margin="4,12" VerticalAlignment="Bottom"/>
+                    </WrapPanel>
+                </Grid>
+                <ComboBox Grid.Column="2" Grid.Row="3" Name="cmbWaterign" Margin="4"  materialDesign:HintAssist.Hint="{DynamicResource pl_Watering}" ItemsSource="{Binding Waterings}" SelectedIndex="{Binding WateringIndex}" Style="{StaticResource MaterialDesignFloatingHintComboBox}"/>
+                <WrapPanel Grid.Row="4" Orientation="Horizontal">
+                    <TextBlock Text="{DynamicResource pl_Temperature}" VerticalAlignment="Center" Margin="4"/>
+                    <TextBox x:Name="txtTempMin" Text="{Binding Path=TemperatureMin}" x:FieldModifier="private" Margin="4" Width="26" PreviewKeyDown="NumPreviewKeyDown"/>
+                    <TextBlock Text="—" VerticalAlignment="Center" Margin="4"/>
+                    <TextBox x:Name="txtTempMax" Text="{Binding Path=TemperatureMax}" x:FieldModifier="private" Margin="4" Width="26" PreviewKeyDown="NumPreviewKeyDown" />
+                    <TextBlock Text="°C" VerticalAlignment="Center" Margin="4"/>
+                </WrapPanel>
+                <TextBlock Grid.Row="5" Margin="4" Text="{DynamicResource m_e_Texture}"/>
+                <ListBox Grid.ColumnSpan="3" Grid.Row="6" Name="wpTextures" Margin="4" Height="86" ScrollViewer.CanContentScroll="True" ItemsSource="{Binding Textures}" SelectedIndex="{Binding TextureIndex}" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#ffb74d" />
+                                    <Setter Property="Foreground" Value="White" />
+                                </Trigger>
+                            </Style.Triggers>
+                            <Style.Resources>
+                                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent"/>
+                            </Style.Resources>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding Image}" Width="50" Height="50" Stretch="UniformToFill" />
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <TextBox Grid.ColumnSpan="3" Grid.Row="7" TextWrapping="Wrap" materialDesign:HintAssist.Hint="{DynamicResource pl_Description}" Text="{Binding Path=Description}" AcceptsReturn="True" MaxHeight="120" Margin="4" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+            </Grid>
+            <WrapPanel HorizontalAlignment="Center" Margin="6,12,6,18">
+                <Button Name="btnSave" Foreground="White" IsEnabled="False" Content="{DynamicResource m_a_Save}" Margin="6" Command="{StaticResource cmndSave}"/>
+                <Button Name="btnCancel" Foreground="White" Content="{DynamicResource m_p_Cancel}" Command="{StaticResource cmndCancel}"/>
+            </WrapPanel>
+        </StackPanel>
+    </materialDesign:Card>
+</UserControl>

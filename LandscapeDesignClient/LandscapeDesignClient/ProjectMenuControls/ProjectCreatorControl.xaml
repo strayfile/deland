@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="LandscapeDesignClient.ProjectMenuControls.ProjectCreatorControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LandscapeDesignClient.ProjectMenuControls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" VerticalAlignment="Center" HorizontalAlignment="Center">
+    <UserControl.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries />
+                <RoutedUICommand x:Key="cmndCreate" Text="cmdCreate"/>
+                <RoutedUICommand x:Key="cmndCancel" Text="cmdCancel"/>
+            </ResourceDictionary>
+    </UserControl.Resources>
+    <UserControl.CommandBindings>
+        <CommandBinding Command="{StaticResource cmndCreate}" Executed="CreateExecuted"/>
+        <CommandBinding Command="{StaticResource cmndCancel}" Executed="CancelExecuted"/>
+    </UserControl.CommandBindings>
+    <UserControl.InputBindings>
+        <KeyBinding Key="Return" Command="{StaticResource cmndCreate}"/>
+        <KeyBinding Key="Esc" Command="{StaticResource cmndCancel}"/>
+    </UserControl.InputBindings>
+    <materialDesign:Card Background="White">
+        <StackPanel Name="spProject">
+            <Border Background="#FF43A647">
+                <TextBlock Text="{Binding TitleText}" Foreground="White" HorizontalAlignment="Center" Margin="14" FontSize="15"/>
+            </Border>
+            <Grid Name="spProjectData" Width="420" Height="Auto" Margin="18,10" ScrollViewer.CanContentScroll="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="4"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.ColumnSpan="3" Text="{Binding Path=ProjectName}" Margin="4" materialDesign:HintAssist.Hint="{DynamicResource m_e_Name}" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <WrapPanel Grid.Row="1" Grid.ColumnSpan="3" Margin="0 12 0 0">
+                    <TextBlock Text="{DynamicResource m_p_Size}" Margin="4 4 12 4" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbLength" Text="{Binding Path=Length}" materialDesign:HintAssist.Hint="{DynamicResource m_p_Length}" x:FieldModifier="private" Margin="4" Width="Auto" MinWidth="48" PreviewKeyDown="NumPreviewKeyDown"/>
+                    <TextBlock Text="{DynamicResource m_p_Meter}" Margin="4 4 12 4" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbWidth" Text="{Binding Path=Width}" materialDesign:HintAssist.Hint="{DynamicResource m_p_Width}" x:FieldModifier="private" Margin="4" Width="Auto" MinWidth="48" PreviewKeyDown="NumPreviewKeyDown"/>
+                    <TextBlock Text="{DynamicResource m_p_Meter}" Margin="4 4 12 4" VerticalAlignment="Center"/>
+                </WrapPanel>
+                <ComboBox Grid.Row="2" Name="cmbSoil" materialDesign:HintAssist.Hint="{DynamicResource pl_Soil}" SelectedIndex="{Binding SoilIndex}" ItemsSource="{Binding SoilNames}" Margin="4" Style="{StaticResource MaterialDesignFloatingHintComboBox}"/>
+                <ComboBox Grid.Column="2" Grid.Row="2" Name="cmbSoilType" Margin="4" materialDesign:HintAssist.Hint="{DynamicResource pl_SoilPh}" ItemsSource="{Binding SoilTypes}" SelectedIndex="{Binding SoilTypeIndex}" Style="{StaticResource MaterialDesignFloatingHintComboBox}"/>
+                <ComboBox Grid.Row="3" Name="cmbLightning" Margin="4" materialDesign:HintAssist.Hint="{DynamicResource pl_Lightning}" ItemsSource="{Binding Lightnings}" SelectedIndex="{Binding LightningIndex}" Style="{StaticResource MaterialDesignFloatingHintComboBox}"/>
+                <WrapPanel Grid.Row="3" Grid.Column="2" VerticalAlignment="Center">
+                    <TextBlock Text="{DynamicResource pl_Temperature}" VerticalAlignment="Center" Margin="4"/>
+                    <TextBox x:Name="txtTempMin" Text="{Binding Path=TemperatureMin}" x:FieldModifier="private" Margin="4" Width="26" PreviewKeyDown="NumPreviewKeyDown"/>
+                    <TextBlock Text="—" VerticalAlignment="Center" Margin="4"/>
+                    <TextBox x:Name="txtTempMax" Text="{Binding Path=TemperatureMax}" x:FieldModifier="private" Margin="4" Width="26" PreviewKeyDown="NumPreviewKeyDown" />
+                    <TextBlock Text="°C" VerticalAlignment="Center" Margin="4"/>
+                </WrapPanel>
+            </Grid>
+            <WrapPanel HorizontalAlignment="Center" Margin="6,12,6,18">
+                <Button Name="btnSave" Foreground="White" IsEnabled="False" Content="{DynamicResource m_a_Create}" Margin="6" Command="{StaticResource cmndCreate}"/>
+                <Button Name="btnCancel" Foreground="White" Content="{DynamicResource m_p_Cancel}" Command="{StaticResource cmndCancel}"/>
+            </WrapPanel>
+        </StackPanel>
+    </materialDesign:Card>
+</UserControl>

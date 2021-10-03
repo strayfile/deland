@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LandscapeDesignServer.LandscapeDesignModel" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LandscapeDesignServer.LandscapeDesignModel" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LandscapeDesign/?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data.Entity.Spatial" />
+  <xs:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LandscapeDesign/?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="LDUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LDUser" nillable="true" type="tns:LDUser" />
+  <xs:complexType name="ArrayOfLDProject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LDProject" nillable="true" type="tns:LDProject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLDProject" nillable="true" type="tns:ArrayOfLDProject" />
+  <xs:complexType name="LDProject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ChangeDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Entities" nillable="true" type="tns:ArrayOfLDEntity" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="IdUser" type="xs:int" />
+      <xs:element minOccurs="0" name="Lightning" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Share" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Soil" type="xs:int" />
+      <xs:element minOccurs="0" name="SoilType" type="xs:int" />
+      <xs:element minOccurs="0" name="TemperatureMax" type="xs:int" />
+      <xs:element minOccurs="0" name="TemperatureMin" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LDProject" nillable="true" type="tns:LDProject" />
+  <xs:complexType name="ArrayOfLDEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LDEntity" nillable="true" type="tns:LDEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLDEntity" nillable="true" type="tns:ArrayOfLDEntity" />
+  <xs:complexType name="LDEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CanBeOverlapping" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CanResize" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Category" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="IdProject" type="xs:int" />
+      <xs:element minOccurs="0" name="Layer" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System.Data.Entity.Spatial" minOccurs="0" name="Polygon" nillable="true" type="q1:DbGeometry" />
+      <xs:element minOccurs="0" name="Rotate" type="xs:int" />
+      <xs:element minOccurs="0" name="Texture" type="xs:int" />
+      <xs:element minOccurs="0" name="X" type="xs:int" />
+      <xs:element minOccurs="0" name="Y" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LDEntity" nillable="true" type="tns:LDEntity" />
+  <xs:complexType name="LDEntityTexture">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Category" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="IdUser" type="xs:int" />
+      <xs:element minOccurs="0" name="Share" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Texture" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LDEntityTexture" nillable="true" type="tns:LDEntityTexture" />
+  <xs:complexType name="ArrayOfLDPlant">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LDPlant" nillable="true" type="tns:LDPlant" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLDPlant" nillable="true" type="tns:ArrayOfLDPlant" />
+  <xs:complexType name="LDPlant">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Care" type="xs:int" />
+      <xs:element minOccurs="0" name="Category" type="xs:int" />
+      <xs:element minOccurs="0" name="Crown" type="xs:int" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="IdTexture" type="xs:int" />
+      <xs:element minOccurs="0" name="IdUser" type="xs:int" />
+      <xs:element minOccurs="0" name="Lightning" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Overlappable" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Radius" type="xs:int" />
+      <xs:element minOccurs="0" name="Resizable" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Share" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Soil" type="xs:int" />
+      <xs:element minOccurs="0" name="SoilType" type="xs:int" />
+      <xs:element minOccurs="0" name="TemperatureMax" type="xs:int" />
+      <xs:element minOccurs="0" name="TemperatureMin" type="xs:int" />
+      <xs:element minOccurs="0" name="Watering" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LDPlant" nillable="true" type="tns:LDPlant" />
+  <xs:complexType name="LDPlantCharacteristics">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CareType" nillable="true" type="q2:ArrayOfKeyValueOfintstring" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Category" nillable="true" type="q3:ArrayOfKeyValueOfintstring" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Lightning" nillable="true" type="q4:ArrayOfKeyValueOfintstring" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SoilNames" nillable="true" type="q5:ArrayOfKeyValueOfintstring" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SoilPH" nillable="true" type="q6:ArrayOfKeyValueOfintstring" />
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SoilTypes" nillable="true" type="q7:ArrayOfKeyValueOfintstring" />
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Watering" nillable="true" type="q8:ArrayOfKeyValueOfintstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LDPlantCharacteristics" nillable="true" type="tns:LDPlantCharacteristics" />
+  <xs:complexType name="ArrayOfLDBuilding">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LDBuilding" nillable="true" type="tns:LDBuilding" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLDBuilding" nillable="true" type="tns:ArrayOfLDBuilding" />
+  <xs:complexType name="LDBuilding">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Category" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="IdUser" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Overlappable" type="xs:boolean" />
+      <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/System.Data.Entity.Spatial" minOccurs="0" name="Polygon" nillable="true" type="q9:DbGeometry" />
+      <xs:element minOccurs="0" name="Saved" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Share" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LDBuilding" nillable="true" type="tns:LDBuilding" />
+  <xs:complexType name="LDBuildingCharacteristics">
+    <xs:sequence>
+      <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Category" nillable="true" type="q10:ArrayOfKeyValueOfintstring" />
+      <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Overlapable" nillable="true" type="q11:ArrayOfKeyValueOfintboolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LDBuildingCharacteristics" nillable="true" type="tns:LDBuildingCharacteristics" />
+</xs:schema>

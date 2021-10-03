@@ -1,0 +1,39 @@
+﻿<Window x:Class="LandscapeDesignClient.ProjectMenuControls.MessageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LandscapeDesignClient.ProjectMenuControls"
+        mc:Ignorable="d" Title="{Binding MessageTitle}" Height="180" Width="320" ResizeMode="NoResize">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries />
+            <RoutedUICommand x:Key="cmndOK" Text="cmdOK"/>
+            <RoutedUICommand x:Key="cmndCancel" Text="cmdCancel"/>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource cmndOK}" Executed="OkExecuted"/>
+        <CommandBinding Command="{StaticResource cmndCancel}" Executed="CancelExecuted"/>
+    </Window.CommandBindings>
+    <Window.InputBindings>
+        <KeyBinding Key="Return" Command="{StaticResource cmndOK}"/>
+        <KeyBinding Key="Esc" Command="{StaticResource cmndCancel}"/>
+    </Window.InputBindings>
+    <Grid Name="gMess">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Image Grid.RowSpan="2" Source="pack://application:,,,/Resources/backMess.jpg" Stretch="UniformToFill" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <Border Background="#C2FFFFFF" CornerRadius="2" BorderThickness="0" Margin="12,12,12,2">
+            <TextBlock Text="{Binding MessageText}" HorizontalAlignment="Center" FontSize="13" TextWrapping="Wrap" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" VerticalAlignment="Center"/>
+        </Border>
+        <WrapPanel Grid.Row="1" HorizontalAlignment="Center" Margin="4,4,4,8">
+            <Button Name="btnOk" Content="{DynamicResource m_OK}" Margin="8" Height="28" Background="White" Command="{StaticResource cmndOK}"/>
+            <Button Name="btnYes" Visibility="Hidden" Width="0" Height="28" Background="White" Content="{DynamicResource m_Yes}" Command="{StaticResource cmndOK}"/>
+            <Button Name="btnNo" Visibility="Hidden" Width="0" Height="28" Background="White" Content="{DynamicResource m_No}" Command="{StaticResource cmndCancel}"/>
+            <Button Name="btnCancel" Visibility="Hidden" Width="0" Height="28" Background="White" Content="{DynamicResource m_Cancel}"  Command="{StaticResource cmndCancel}"/>
+        </WrapPanel>
+    </Grid>
+</Window>

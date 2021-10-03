@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="LandscapeDesignClient.AuthControls.Registration"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:LandscapeDesignClient.AuthControls"
+             mc:Ignorable="d" VerticalAlignment="Center" HorizontalAlignment="Center">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries />
+            <RoutedUICommand x:Key="cmndReg" Text="cmdReg"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <UserControl.CommandBindings>
+        <CommandBinding Command="{StaticResource cmndReg}" Executed="Reg_Executed"/>
+    </UserControl.CommandBindings>
+    <UserControl.InputBindings>
+        <KeyBinding Key="Return" Command="{StaticResource cmndReg}"/>
+    </UserControl.InputBindings>
+    <materialDesign:Card Background="White">
+        <Grid Name="gReg">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border Background="#FF43A647">
+                <TextBlock Text="{DynamicResource r_Header}" Margin="10" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="18"/>
+            </Border>
+            <StackPanel Grid.Row="1" Width="290" Background="White" Margin="10">
+                <Grid HorizontalAlignment="Center" Margin="4,10,4,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="250"/>
+                        <ColumnDefinition Width="10"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <materialDesign:PackIcon Kind="Account" Width="20" Height="20" Margin="15, 20, 5, 5"/>
+                    <TextBox Grid.Row="0" Grid.Column="1" Name="tbName" Text="{Binding Path=UserName}" Margin="15, 5, 5, 5" materialDesign:HintAssist.Hint="{DynamicResource r_Name}" materialDesign:HintAssist.IsFloating="True" LostFocus="TbName_LostFocus" />
+                    <TextBlock Grid.Row="0" Grid.Column="2" Name="tbNameError" VerticalAlignment="Center" Foreground="Red"/>
+                    <materialDesign:PackIcon Grid.Row="1" Kind="Email" Width="20" Height="20" Margin="15, 20, 5, 5"/>
+                    <TextBox Grid.Row="1" Grid.Column="1" Name="tbEmail" Text="{Binding Path=Email}" Margin="15, 5, 5, 5" materialDesign:HintAssist.Hint="{DynamicResource m_Email}" materialDesign:HintAssist.IsFloating="True" LostFocus="TbEmail_LostFocus" />
+                    <TextBlock Grid.Row="1" Grid.Column="2" Name="tbEmailError" VerticalAlignment="Center" Foreground="Red"/>
+                    <materialDesign:PackIcon Grid.Row="2" Kind="Key" Width="20" Height="20" Margin="15, 20, 5, 5"/>
+                    <PasswordBox Name="tbPass" Grid.Row="2" Grid.Column="1" Margin="15, 5, 5, 5" PasswordChar="*" LostFocus="TbPass_LostFocus" materialDesign:HintAssist.Hint="{DynamicResource m_Password}" 
+                                     Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" PasswordChanged="TbPass_PasswordChanged"/>
+                    <TextBlock Grid.Row="2" Grid.Column="2" Name="tbPassError" VerticalAlignment="Center" Foreground="Red"/>
+                    <PasswordBox Name="tbPass2" Grid.Row="3" Grid.Column="1" Margin="15, 5, 5, 5" PasswordChar="*" LostFocus="TbPass2_LostFocus" materialDesign:HintAssist.Hint="{DynamicResource r_PasswordConfirm}" 
+                                     Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" PasswordChanged="TbPass2_PasswordChanged"/>
+                    <TextBlock Grid.Row="3" Grid.Column="2" Name="tbPass2Error" VerticalAlignment="Center" Foreground="Red"/>
+                </Grid>
+                <Grid HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Button Name="btnReg" Content="{DynamicResource r_Reg}" HorizontalAlignment="Right" Width="190" Margin="10" Foreground="#FFFFFF" Command="{StaticResource cmndReg}"/>
+                    <Button Grid.Column="1" Name="btnSignIn" Content="{DynamicResource r_Login}" Width="Auto" HorizontalAlignment="Left" Background="Transparent" Foreground="#FF003C02" FontSize="12" Click="BtnSignInClick"/>
+                    <TextBlock Grid.Row="1" Grid.ColumnSpan="3" Text="{Binding Path=ErrorText}" TextWrapping="Wrap" FontWeight="DemiBold" MaxWidth="330" Margin="10"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </materialDesign:Card>
+</UserControl>

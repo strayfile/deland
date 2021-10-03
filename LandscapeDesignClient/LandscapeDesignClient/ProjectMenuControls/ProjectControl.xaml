@@ -1,0 +1,190 @@
+﻿<UserControl x:Class="LandscapeDesignClient.ProjectMenuControls.ProjectControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:LandscapeDesignClient.ProjectMenuControls"
+             xmlns:cc="clr-namespace:LandscapeDesignClient.ProjectDrawer.CustomControls"
+             xmlns:pd="clr-namespace:LandscapeDesignClient.ProjectDrawer" KeyUp="ProjectControlKeyUp"
+             mc:Ignorable="d" MinWidth="400" MinHeight="300" MouseMove="ProjectControlMouseMove">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../ProjectDrawer/CustomControls/RadioButtonDelandStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <pd:ProjectDrawerViewModel x:Key="CanvasViewModel" />
+            <RoutedUICommand x:Key="cmndCreateNewProject" Text="cmdCreateNewProject"/>
+            <RoutedUICommand x:Key="cmndOpenProject" Text="cmdOpenProject"/>
+            <RoutedUICommand x:Key="cmndCloseProject" Text="cmdCloseProject"/>
+            <RoutedUICommand x:Key="cmndProfile" Text="cmdProfile"/>
+            <RoutedUICommand x:Key="cmndSignOut" Text="cmdSignOut"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <UserControl.CommandBindings>
+        <CommandBinding Command="{StaticResource cmndCreateNewProject}" Executed="CommandCreateNewProjectExecuted"/>
+        <CommandBinding Command="{StaticResource cmndOpenProject}" Executed="CommandOpenProjectExecuted"/>
+        <CommandBinding Command="{StaticResource cmndCloseProject}" Executed="CommandCloseProjectExecuted"/>
+        <CommandBinding Command="{StaticResource cmndProfile}" Executed="CommandProfile_Executed"/>
+        <CommandBinding Command="{StaticResource cmndSignOut}" Executed="CommandSignOutExecuted"/>
+    </UserControl.CommandBindings>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Menu IsMainMenu="True" Background="#FF43A647" Foreground="White">
+                <MenuItem Header="{DynamicResource m_p_Project}">
+                    <MenuItem Header="{DynamicResource m_p_New}" InputGestureText="Ctrl+N" Command="{StaticResource cmndCreateNewProject}">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="FileOutline"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="{DynamicResource m_p_Open}" InputGestureText="Ctrl+N" Command="{StaticResource cmndOpenProject}">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="File"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="{DynamicResource m_p_Save}" InputGestureText="Ctrl+S">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="ContentSave"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="{DynamicResource m_p_SaveAs}" InputGestureText="Ctrl+Shift+S"/>
+                    <MenuItem Header="{DynamicResource m_p_Close}" InputGestureText="Ctrl+E" Command="{StaticResource cmndCloseProject}">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="CloseBox" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="{DynamicResource m_p_Share}" IsCheckable="True" IsChecked="False" >
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="Share" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="{DynamicResource m_p_Edit}">
+                    <MenuItem Header="{DynamicResource m_e_Undo}" InputGestureText="Ctrl+Z">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="Undo" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="{DynamicResource m_e_Redo}" InputGestureText="Ctrl+Y">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="Redo" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="{DynamicResource m_e_Cut}" InputGestureText="Ctrl+X">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="ContentCut" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="{DynamicResource m_e_Copy}" InputGestureText="Ctrl+C">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="ContentCopy"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="{DynamicResource m_e_Paste}" InputGestureText="Ctrl+V" >
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="ContentPaste"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="{DynamicResource m_a_Account}">
+                    <MenuItem Header="{DynamicResource m_a_Profile}" InputGestureText="Ctrl+P" Command="{StaticResource cmndProfile}">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="Account" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="{DynamicResource m_a_SignOut}" InputGestureText="Ctrl+Q" Command="{StaticResource cmndSignOut}">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="AccountArrowRight" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" MinWidth="300"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*" MinWidth="260" MaxWidth="600"/>
+            </Grid.ColumnDefinitions>
+            <Border Margin="4,4,3,4" BorderThickness="0" Background="#40000000" CornerRadius="2">
+                <pd:CanvasControl x:Name="drawingControl" Margin="5"/>
+            </Border>
+            <Border Margin="3,4,4,4" Grid.Column="2" Background="#40000000" BorderThickness="0" CornerRadius="2">
+                <Grid Name="gItems" DataContext="{StaticResource CanvasViewModel}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Border Name="DrawRBs" Background="#50FFFFFF" Margin="2" CornerRadius="2">
+                        <ItemsControl ItemsSource="{Binding RBActs}" Margin="6 4 6 4">
+                            <ItemsControl.Template>
+                                <ControlTemplate>
+                                    <WrapPanel Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" IsItemsHost="true"/>
+                                </ControlTemplate>
+                            </ItemsControl.Template>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <WrapPanel>
+                                        <RadioButton GroupName="Intersections" IsEnabled="{Binding IsEnabled, Mode=TwoWay}" IsChecked="{Binding IsChecked, Mode=TwoWay}" ToolTip="{Binding Path=Text}" Style="{StaticResource ResourceKey=RadioButtonDelandStyle}">
+                                            <RadioButton.Content>
+                                                <materialDesign:PackIcon Kind="{Binding Path=Icon}" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" Height="20"/>
+                                            </RadioButton.Content>
+                                        </RadioButton>
+                                    </WrapPanel>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </Border>
+                    <Border Name="DrawBs" Grid.Row="1" Background="#50FFFFFF" Margin="2" CornerRadius="2">
+                        <ItemsControl ItemsSource="{Binding BActs}" Margin="6 4 6 4">
+                            <ItemsControl.Template>
+                                <ControlTemplate>
+                                    <WrapPanel Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" IsItemsHost="true"/>
+                                </ControlTemplate>
+                            </ItemsControl.Template>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <WrapPanel>
+                                        <Button IsEnabled="{Binding IsEnabled, Mode=TwoWay}" ToolTip="{Binding Path=Text}" Style="{StaticResource ResourceKey=RadioButtonDelandStyle}">
+                                            <Button.Content>
+                                                <materialDesign:PackIcon Kind="{Binding Path=Icon}" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" Height="20"/>
+                                            </Button.Content>
+                                        </Button>
+                                    </WrapPanel>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </Border>
+                    <Border Background="#50FFFFFF" Grid.Row="2" Margin="2" CornerRadius="2">
+                    </Border>
+                </Grid>
+            </Border>
+            <GridSplitter Grid.Column="1" Width="3" VerticalAlignment="Stretch" HorizontalAlignment="Center" ShowsPreview="True"/>
+        </Grid>
+        <Grid Name="gStatusBar" Background="White" Height="Auto" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Border CornerRadius="1" Background="White" Grid.Column="2" Margin="4 4 6 6">
+                <StackPanel>
+                    <TextBlock Text="{DynamicResource m_p_Position}" HorizontalAlignment="Center" FontSize="11"/>
+                    <WrapPanel>
+                        <TextBlock Text="X: " FontSize="11"/>
+                        <TextBlock Name="tbPositionX" Text="35" FontSize="11"/>
+                        <TextBlock Text="  Y: " FontSize="11"/>
+                        <TextBlock Name="tbPositionY" Text="345" FontSize="11"/>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

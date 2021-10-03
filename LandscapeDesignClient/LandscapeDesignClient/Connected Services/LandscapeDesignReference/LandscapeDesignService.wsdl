@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LandscapeDesignService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_ILandscapeDesignService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LandscapeDesign/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LandscapeDesign/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LandscapeDesign/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LandscapeDesign/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/LandscapeDesignServer.LandscapeDesignModel" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LandscapeDesign/?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data.Entity.Spatial" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LandscapeDesign/?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILandscapeDesignService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_Login_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q1:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_Register_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q2:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_SendConfirmKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendConfirmKey" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_SendConfirmKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendConfirmKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_SendConfirmKey_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q3:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_ConfirmRegister_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmRegister" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_ConfirmRegister_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_ConfirmRegister_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q4:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditUserName_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditUserName" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditUserName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditUserName_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q5:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditUserPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditUserPassword" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditUserPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditUserPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditUserPassword_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q6:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetProjects_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProjects" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetProjects_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProjectsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetProjects_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q7:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetProjects_InvalidProjectsFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q8:InvalidProjectsFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetOtherUsersProjects_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOtherUsersProjects" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetOtherUsersProjects_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOtherUsersProjectsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetOtherUsersProjects_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q9:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetOtherUsersProjects_InvalidProjectsFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q10:InvalidProjectsFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetProjectEntities_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProjectEntities" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetProjectEntities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProjectEntitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetProjectEntities_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q11:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetProjectEntities_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q12:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetPlantTexture_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlantTexture" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetPlantTexture_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlantTextureResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetPlantTexture_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q13:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetPlantTexture_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q14:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetBuildingTexture_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuildingTexture" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetBuildingTexture_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuildingTextureResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetBuildingTexture_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q15:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetBuildingTexture_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q16:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetAllUserPlants_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserPlants" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetAllUserPlants_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserPlantsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetAllUserPlants_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q17="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q17:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetAllUserPlants_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q18:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetOtherUsersPlants_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOtherUsersPlants" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetOtherUsersPlants_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOtherUsersPlantsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetOtherUsersPlants_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q19="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q19:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetOtherUsersPlants_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q20:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetPlantsCharacteristics_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlantsCharacteristics" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetPlantsCharacteristics_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlantsCharacteristicsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetPlantsCharacteristics_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q21:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetPlantsCharacteristics_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q22:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetAllUserBuildings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserBuildings" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetAllUserBuildings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserBuildingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetAllUserBuildings_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q23="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q23:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetAllUserBuildings_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q24:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetOtherUsersBuildings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOtherUsersBuildings" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetOtherUsersBuildings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOtherUsersBuildingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetOtherUsersBuildings_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q25="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q25:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetOtherUsersBuildings_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q26:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetBuildingCharacteristics_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuildingCharacteristics" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetBuildingCharacteristics_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuildingCharacteristicsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetBuildingCharacteristics_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q27:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_GetBuildingCharacteristics_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q28:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_AddProject_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddProject" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_AddProject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_AddProject_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q29="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q29:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_AddProject_InvalidProjectsFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q30:InvalidProjectsFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditProject_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditProject" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditProject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditProject_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q31="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q31:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditProject_InvalidProjectsFaultFault_FaultMessage">
+    <wsdl:part xmlns:q32="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q32:InvalidProjectsFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_ShareProject_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShareProject" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_ShareProject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShareProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_ShareProject_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q33="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q33:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_ShareProject_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q34="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q34:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_DeleteProject_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProject" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_DeleteProject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_DeleteProject_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q35="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q35:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_DeleteProject_InvalidProjectsFaultFault_FaultMessage">
+    <wsdl:part xmlns:q36="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q36:InvalidProjectsFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_AddPlant_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPlant" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_AddPlant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPlantResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_AddPlant_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q37="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q37:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_AddPlant_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q38="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q38:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditPlant_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditPlant" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditPlant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditPlantResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditPlant_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q39="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q39:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditPlant_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q40="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q40:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_SharePlant_InputMessage">
+    <wsdl:part name="parameters" element="tns:SharePlant" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_SharePlant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SharePlantResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_SharePlant_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q41="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q41:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_SharePlant_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q42="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q42:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_DeletePlant_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePlant" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_DeletePlant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePlantResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_DeletePlant_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q43="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q43:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_DeletePlant_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q44="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q44:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_AddBuilding_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBuilding" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_AddBuilding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBuildingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_AddBuilding_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q45="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q45:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_AddBuilding_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q46="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q46:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditBuilding_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditBuilding" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditBuilding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditBuildingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditBuilding_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q47="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q47:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_EditBuilding_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q48="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q48:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_ShareBuilding_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShareBuilding" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_ShareBuilding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShareBuildingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_ShareBuilding_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q49="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q49:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_ShareBuilding_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q50="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q50:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_DeleteBuilding_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBuilding" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_DeleteBuilding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBuildingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_DeleteBuilding_InvalidUserFaultFault_FaultMessage">
+    <wsdl:part xmlns:q51="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q51:InvalidUserFault" />
+  </wsdl:message>
+  <wsdl:message name="ILandscapeDesignService_DeleteBuilding_InvalidProjectItemFaultFault_FaultMessage">
+    <wsdl:part xmlns:q52="http://schemas.datacontract.org/2004/07/LandscapeDesignServer" name="detail" element="q52:InvalidProjectItemFault" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="ILandscapeDesignService">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/Login" message="tns:ILandscapeDesignService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/LoginResponse" message="tns:ILandscapeDesignService_Login_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/LoginInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_Login_InvalidUserFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/Register" message="tns:ILandscapeDesignService_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/RegisterResponse" message="tns:ILandscapeDesignService_Register_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/RegisterInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_Register_InvalidUserFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SendConfirmKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/SendConfirmKey" message="tns:ILandscapeDesignService_SendConfirmKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/SendConfirmKeyResponse" message="tns:ILandscapeDesignService_SendConfirmKey_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/SendConfirmKeyInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_SendConfirmKey_InvalidUserFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ConfirmRegister">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/ConfirmRegister" message="tns:ILandscapeDesignService_ConfirmRegister_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/ConfirmRegisterResponse" message="tns:ILandscapeDesignService_ConfirmRegister_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/ConfirmRegisterInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_ConfirmRegister_InvalidUserFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="EditUserName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditUserName" message="tns:ILandscapeDesignService_EditUserName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditUserNameResponse" message="tns:ILandscapeDesignService_EditUserName_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditUserNameInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_EditUserName_InvalidUserFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="EditUserPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditUserPassword" message="tns:ILandscapeDesignService_EditUserPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditUserPasswordResponse" message="tns:ILandscapeDesignService_EditUserPassword_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditUserPasswordInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_EditUserPassword_InvalidUserFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetProjects">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetProjects" message="tns:ILandscapeDesignService_GetProjects_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetProjectsResponse" message="tns:ILandscapeDesignService_GetProjects_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetProjectsInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_GetProjects_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetProjectsInvalidProjectsFaultFault" name="InvalidProjectsFaultFault" message="tns:ILandscapeDesignService_GetProjects_InvalidProjectsFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetOtherUsersProjects">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetOtherUsersProjects" message="tns:ILandscapeDesignService_GetOtherUsersProjects_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetOtherUsersProjectsResponse" message="tns:ILandscapeDesignService_GetOtherUsersProjects_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetOtherUsersProjectsInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_GetOtherUsersProjects_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetOtherUsersProjectsInvalidProjectsFaultFault" name="InvalidProjectsFaultFault" message="tns:ILandscapeDesignService_GetOtherUsersProjects_InvalidProjectsFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetProjectEntities">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetProjectEntities" message="tns:ILandscapeDesignService_GetProjectEntities_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetProjectEntitiesResponse" message="tns:ILandscapeDesignService_GetProjectEntities_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetProjectEntitiesInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_GetProjectEntities_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetProjectEntitiesInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_GetProjectEntities_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetPlantTexture">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetPlantTexture" message="tns:ILandscapeDesignService_GetPlantTexture_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetPlantTextureResponse" message="tns:ILandscapeDesignService_GetPlantTexture_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetPlantTextureInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_GetPlantTexture_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetPlantTextureInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_GetPlantTexture_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetBuildingTexture">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetBuildingTexture" message="tns:ILandscapeDesignService_GetBuildingTexture_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetBuildingTextureResponse" message="tns:ILandscapeDesignService_GetBuildingTexture_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetBuildingTextureInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_GetBuildingTexture_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetBuildingTextureInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_GetBuildingTexture_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetAllUserPlants">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetAllUserPlants" message="tns:ILandscapeDesignService_GetAllUserPlants_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetAllUserPlantsResponse" message="tns:ILandscapeDesignService_GetAllUserPlants_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetAllUserPlantsInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_GetAllUserPlants_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetAllUserPlantsInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_GetAllUserPlants_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetOtherUsersPlants">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetOtherUsersPlants" message="tns:ILandscapeDesignService_GetOtherUsersPlants_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetOtherUsersPlantsResponse" message="tns:ILandscapeDesignService_GetOtherUsersPlants_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetOtherUsersPlantsInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_GetOtherUsersPlants_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetOtherUsersPlantsInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_GetOtherUsersPlants_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetPlantsCharacteristics">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetPlantsCharacteristics" message="tns:ILandscapeDesignService_GetPlantsCharacteristics_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetPlantsCharacteristicsResponse" message="tns:ILandscapeDesignService_GetPlantsCharacteristics_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetPlantsCharacteristicsInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_GetPlantsCharacteristics_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetPlantsCharacteristicsInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_GetPlantsCharacteristics_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetAllUserBuildings">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetAllUserBuildings" message="tns:ILandscapeDesignService_GetAllUserBuildings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetAllUserBuildingsResponse" message="tns:ILandscapeDesignService_GetAllUserBuildings_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetAllUserBuildingsInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_GetAllUserBuildings_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetAllUserBuildingsInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_GetAllUserBuildings_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetOtherUsersBuildings">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetOtherUsersBuildings" message="tns:ILandscapeDesignService_GetOtherUsersBuildings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetOtherUsersBuildingsResponse" message="tns:ILandscapeDesignService_GetOtherUsersBuildings_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetOtherUsersBuildingsInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_GetOtherUsersBuildings_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetOtherUsersBuildingsInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_GetOtherUsersBuildings_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetBuildingCharacteristics">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetBuildingCharacteristics" message="tns:ILandscapeDesignService_GetBuildingCharacteristics_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetBuildingCharacteristicsResponse" message="tns:ILandscapeDesignService_GetBuildingCharacteristics_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetBuildingCharacteristicsInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_GetBuildingCharacteristics_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/GetBuildingCharacteristicsInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_GetBuildingCharacteristics_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="AddProject">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/AddProject" message="tns:ILandscapeDesignService_AddProject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/AddProjectResponse" message="tns:ILandscapeDesignService_AddProject_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/AddProjectInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_AddProject_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/AddProjectInvalidProjectsFaultFault" name="InvalidProjectsFaultFault" message="tns:ILandscapeDesignService_AddProject_InvalidProjectsFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="EditProject">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditProject" message="tns:ILandscapeDesignService_EditProject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditProjectResponse" message="tns:ILandscapeDesignService_EditProject_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditProjectInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_EditProject_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditProjectInvalidProjectsFaultFault" name="InvalidProjectsFaultFault" message="tns:ILandscapeDesignService_EditProject_InvalidProjectsFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ShareProject">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/ShareProject" message="tns:ILandscapeDesignService_ShareProject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/ShareProjectResponse" message="tns:ILandscapeDesignService_ShareProject_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/ShareProjectInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_ShareProject_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/ShareProjectInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_ShareProject_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="DeleteProject">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/DeleteProject" message="tns:ILandscapeDesignService_DeleteProject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/DeleteProjectResponse" message="tns:ILandscapeDesignService_DeleteProject_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/DeleteProjectInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_DeleteProject_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/DeleteProjectInvalidProjectsFaultFault" name="InvalidProjectsFaultFault" message="tns:ILandscapeDesignService_DeleteProject_InvalidProjectsFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="AddPlant">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/AddPlant" message="tns:ILandscapeDesignService_AddPlant_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/AddPlantResponse" message="tns:ILandscapeDesignService_AddPlant_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/AddPlantInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_AddPlant_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/AddPlantInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_AddPlant_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="EditPlant">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditPlant" message="tns:ILandscapeDesignService_EditPlant_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditPlantResponse" message="tns:ILandscapeDesignService_EditPlant_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditPlantInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_EditPlant_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditPlantInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_EditPlant_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SharePlant">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/SharePlant" message="tns:ILandscapeDesignService_SharePlant_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/SharePlantResponse" message="tns:ILandscapeDesignService_SharePlant_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/SharePlantInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_SharePlant_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/SharePlantInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_SharePlant_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="DeletePlant">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/DeletePlant" message="tns:ILandscapeDesignService_DeletePlant_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/DeletePlantResponse" message="tns:ILandscapeDesignService_DeletePlant_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/DeletePlantInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_DeletePlant_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/DeletePlantInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_DeletePlant_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="AddBuilding">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/AddBuilding" message="tns:ILandscapeDesignService_AddBuilding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/AddBuildingResponse" message="tns:ILandscapeDesignService_AddBuilding_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/AddBuildingInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_AddBuilding_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/AddBuildingInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_AddBuilding_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="EditBuilding">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditBuilding" message="tns:ILandscapeDesignService_EditBuilding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditBuildingResponse" message="tns:ILandscapeDesignService_EditBuilding_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditBuildingInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_EditBuilding_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/EditBuildingInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_EditBuilding_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ShareBuilding">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/ShareBuilding" message="tns:ILandscapeDesignService_ShareBuilding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/ShareBuildingResponse" message="tns:ILandscapeDesignService_ShareBuilding_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/ShareBuildingInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_ShareBuilding_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/ShareBuildingInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_ShareBuilding_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="DeleteBuilding">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILandscapeDesignService/DeleteBuilding" message="tns:ILandscapeDesignService_DeleteBuilding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILandscapeDesignService/DeleteBuildingResponse" message="tns:ILandscapeDesignService_DeleteBuilding_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/DeleteBuildingInvalidUserFaultFault" name="InvalidUserFaultFault" message="tns:ILandscapeDesignService_DeleteBuilding_InvalidUserFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ILandscapeDesignService/DeleteBuildingInvalidProjectItemFaultFault" name="InvalidProjectItemFaultFault" message="tns:ILandscapeDesignService_DeleteBuilding_InvalidProjectItemFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_ILandscapeDesignService" type="tns:ILandscapeDesignService">
+    <wsp:PolicyReference URI="#NetTcpBinding_ILandscapeDesignService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/Register" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SendConfirmKey">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/SendConfirmKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmRegister">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/ConfirmRegister" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EditUserName">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/EditUserName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EditUserPassword">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/EditUserPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjects">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/GetProjects" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectsFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectsFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOtherUsersProjects">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/GetOtherUsersProjects" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectsFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectsFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectEntities">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/GetProjectEntities" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlantTexture">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/GetPlantTexture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildingTexture">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/GetBuildingTexture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserPlants">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/GetAllUserPlants" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOtherUsersPlants">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/GetOtherUsersPlants" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlantsCharacteristics">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/GetPlantsCharacteristics" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserBuildings">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/GetAllUserBuildings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOtherUsersBuildings">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/GetOtherUsersBuildings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildingCharacteristics">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/GetBuildingCharacteristics" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddProject">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/AddProject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectsFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectsFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EditProject">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/EditProject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectsFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectsFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ShareProject">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/ShareProject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProject">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/DeleteProject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectsFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectsFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddPlant">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/AddPlant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EditPlant">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/EditPlant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SharePlant">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/SharePlant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePlant">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/DeletePlant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddBuilding">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/AddBuilding" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EditBuilding">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/EditBuilding" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ShareBuilding">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/ShareBuilding" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBuilding">
+      <soap12:operation soapAction="http://tempuri.org/ILandscapeDesignService/DeleteBuilding" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidUserFaultFault">
+        <soap12:fault use="literal" name="InvalidUserFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidProjectItemFaultFault">
+        <soap12:fault use="literal" name="InvalidProjectItemFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LandscapeDesignService">
+    <wsdl:port name="NetTcpBinding_ILandscapeDesignService" binding="tns:NetTcpBinding_ILandscapeDesignService">
+      <soap12:address location="net.tcp://localhost:8734/Design_Time_Addresses/LandscapeDesign/s" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8734/Design_Time_Addresses/LandscapeDesign/s</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
